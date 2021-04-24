@@ -16,7 +16,7 @@ public class QuizManagers : MonoBehaviour
     [SerializeField] private Image questionImage;           //image element to show the image
     [SerializeField] private WordData[] answerWordList;     //list of answers word in the game
     [SerializeField] private WordData[] optionsWordList;    //list of options word in the game
-
+  
 
     private GameStatuss gameStatus = GameStatuss.Playing;     //to keep track of game status
     private char[] wordsArray = new char[12];               //array which store char of each options
@@ -136,7 +136,7 @@ public class QuizManagers : MonoBehaviour
             if (correctAnswer)
             {
                 Debug.Log("Correct Answer");
-                wordquizscore+=10;
+                wordquizscore +=10;
                 gameStatus = GameStatuss.Next; //set the game status
                 currentQuestionIndex++; //increase currentQuestionIndex
 
