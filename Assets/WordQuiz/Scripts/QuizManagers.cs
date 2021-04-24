@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class QuizManagers : MonoBehaviour
 {
     public static QuizManagers instance; //Instance to make is available in other scripts without reference
+    public int wordquizscore;
 
     [SerializeField] private GameObject gameComplete;
     //Scriptable data which store our questions data
@@ -135,6 +136,7 @@ public class QuizManagers : MonoBehaviour
             if (correctAnswer)
             {
                 Debug.Log("Correct Answer");
+                wordquizscore+=10;
                 gameStatus = GameStatuss.Next; //set the game status
                 currentQuestionIndex++; //increase currentQuestionIndex
 
