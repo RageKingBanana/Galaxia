@@ -21,7 +21,7 @@ MonoBehaviour:
     _isCorrect: 1
   - _info: The Philippines has so many mountains.
     _isCorrect: 0
-  _useTimer: 0
-  _timer: 0
+  _useTimer: 1
+  _timer: 5
   _answerType: 1
   _addScore: 10
