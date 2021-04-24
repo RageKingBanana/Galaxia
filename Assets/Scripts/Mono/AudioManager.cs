@@ -29,7 +29,7 @@ public class Sound
 
     #endregion
 
-    public void Play ()
+    public void Play()
     {
         Source.clip = Clip;
 
@@ -39,12 +39,13 @@ public class Sound
 
         Source.Play();
     }
-    public void Stop ()
+    public void Stop()
     {
         Source.Stop();
     }
 }
-public class AudioManager : MonoBehaviour {
+public class AudioManager : MonoBehaviour
+{
 
     #region Variables
 
