@@ -8,6 +8,6 @@ public class Back : MonoBehaviour
     // Start is called before the first frame update
     public void MainMenu()
     {
-        SceneManager.LoadScene ("MAINMENU");
+        SceneManager.LoadSceneAsync(0);
     }
 }
