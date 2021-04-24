@@ -1257,7 +1257,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5, y: 1.3}
+  m_AnchoredPosition: {x: -5, y: 1.2999878}
   m_SizeDelta: {x: -58.05066, y: -15.016869}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97483579
@@ -3762,7 +3762,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0, y: 7.1}
+  m_AnchoredPosition: {x: 0, y: 7.1000366}
   m_SizeDelta: {x: -17.304504, y: -66.45961}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &213190408
@@ -18252,7 +18252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1406894492
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18268,10 +18268,10 @@ RectTransform:
   m_Father: {fileID: 569276834}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -56, y: -492}
-  m_SizeDelta: {x: 389.3, y: 218.6}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -56, y: -492.5}
+  m_SizeDelta: {x: -2882.7, y: -1422.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1406894493
 MonoBehaviour:
@@ -22443,13 +22443,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1821850550}
   - component: {fileID: 1821850551}
+  - component: {fileID: 1821850552}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1821850550
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22468,7 +22469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -103, y: 106.899994}
+  m_AnchoredPosition: {x: -103, y: 1916}
   m_SizeDelta: {x: -2882.9045, y: -1326.2247}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1821850551
@@ -22483,6 +22484,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa6028f91078e2d498edbe2b2a487d8d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!111 &1821850552
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1821850549}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4aea4cb5be48f27499881655fd514157, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4aea4cb5be48f27499881655fd514157, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1824692551
 GameObject:
   m_ObjectHideFlags: 0
