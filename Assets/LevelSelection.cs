@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelSelection : MonoBehaviour
 {
-
+    public int scoreRequiredToUnlockNext = -1;
     private int levelReached;
     public Button[] levelButtons;
     public int prevLevelPlayed;
@@ -26,6 +26,7 @@ public class LevelSelection : MonoBehaviour
     }
     public void NiceFunc()
     {
+        // Kunin yung nakastore na data
         levelReached = PlayerPrefs.GetInt("levelReached", 1);
         Iskor = PlayerPrefs.GetInt("iskor");
         levelU = PlayerPrefs.GetString("levelU");
@@ -35,12 +36,14 @@ public class LevelSelection : MonoBehaviour
         Debug.Log(Iskor);
         Debug.Log(levelU);
 
+        // Pag walang laman yung levelU, defaulter to
         if (levelU == "")
         {
             PlayerPrefs.SetString("levelU", "10000");
             levelU = PlayerPrefs.GetString("levelU");
         }
 
+        //naka string kasi si levelU, need ko nakaarray para mabago yung each character
         levelUc = levelU.ToCharArray(0, levelUc.Length);
 
         for (int i = 0; i < levelButtons.Length; i++)
@@ -52,9 +55,9 @@ public class LevelSelection : MonoBehaviour
         }
         //compare = PlayerPrefs.GetInt("iskor3");
         //compare = (Iskor + compare) * 0.50;
+        // Taga set ng Level to kung unlocked nya na yung next or hindi
         for (int i = 0; i < levelUc.Length; i++)
-
-            if (Iskor > 19 && prevLevelPlayed == i)
+            if (Iskor > scoreRequiredToUnlockNext && prevLevelPlayed == i)
                 levelUc[prevLevelPlayed] = '1';
 
         string str = new string(levelUc);
